@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//middleware('auth:sanctum')->
+//middleware('auth:sanctum')-> $request->user();
 Route::get('/user', function (Request $request) {
-    return $request->user();
+    return "ok teste";
 });
